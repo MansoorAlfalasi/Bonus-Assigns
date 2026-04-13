@@ -6,17 +6,17 @@ public class bonusassignment {
     
     public static void main(String[] args) {
         //took 20 minutes to figure out i needed to name it the same as the class, nice java.
-        bonusassignment assignment = new bonusassignment();
-        assignment.student.add(new Student("Alice", 85));
-        assignment.student.add(new Student("Bob", 78));
-        assignment.student.add(new Student("Charlie", 92));
-        assignment.student.add(new Student("David", 65));
-        assignment.student.add(new Student("Eve", 88));
-        assignment.student.add(new Student("Alice", 85));
-        assignment.student.add(new Student("Bob", 78));
-        assignment.student.add(new Student("Charlie", 92));
-        assignment.student.add(new Student("David", 65));
-        assignment.student.add(new Student("Eve", 88));
+        bonusassignment student = new bonusassignment();
+        student.student.add(new Student("Alice", 85));
+        student.student.add(new Student("Bob", 78));
+        student.student.add(new Student("Charlie", 92));
+        student.student.add(new Student("David", 65));
+        student.student.add(new Student("Eve", 88));
+        student.student.add(new Student("Alice", 85));
+        student.student.add(new Student("Bob", 78));
+        student.student.add(new Student("Charlie", 92));
+        student.student.add(new Student("David", 65));
+        student.student.add(new Student("Eve", 88));
         
     }
     public int countAbove(int threshold){
