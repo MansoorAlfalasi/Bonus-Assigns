@@ -3,6 +3,17 @@ import java.util.ArrayList;
 
 public class bonusassignment {
     public static void main(String[] args) {
+        ArrayList<Student> student = new ArrayList<>();
+        student.add(new Student("Alice", 85));
+        student.add(new Student("Bob", 78));
+        student.add(new Student("Charlie", 92));
+        student.add(new Student("David", 65));
+        student.add(new Student("Eve", 88));
+        student.add(new Student("Alice", 85));
+        student.add(new Student("Bob", 78));
+        student.add(new Student("Charlie", 92));
+        student.add(new Student("David", 65));
+        student.add(new Student("Eve", 88));
         
     }
     public int countAbove(int threshold){
