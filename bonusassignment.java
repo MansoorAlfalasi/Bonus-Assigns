@@ -2,18 +2,21 @@
 import java.util.ArrayList;
 
 public class bonusassignment {
+    public ArrayList<Student> student = new ArrayList<>();
+    
     public static void main(String[] args) {
-        ArrayList<Student> student = new ArrayList<>();
-        student.add(new Student("Alice", 85));
-        student.add(new Student("Bob", 78));
-        student.add(new Student("Charlie", 92));
-        student.add(new Student("David", 65));
-        student.add(new Student("Eve", 88));
-        student.add(new Student("Alice", 85));
-        student.add(new Student("Bob", 78));
-        student.add(new Student("Charlie", 92));
-        student.add(new Student("David", 65));
-        student.add(new Student("Eve", 88));
+        //took 20 minutes to figure out i needed to name it the same as the class, nice java.
+        bonusassignment assignment = new bonusassignment();
+        assignment.student.add(new Student("Alice", 85));
+        assignment.student.add(new Student("Bob", 78));
+        assignment.student.add(new Student("Charlie", 92));
+        assignment.student.add(new Student("David", 65));
+        assignment.student.add(new Student("Eve", 88));
+        assignment.student.add(new Student("Alice", 85));
+        assignment.student.add(new Student("Bob", 78));
+        assignment.student.add(new Student("Charlie", 92));
+        assignment.student.add(new Student("David", 65));
+        assignment.student.add(new Student("Eve", 88));
         
     }
     public int countAbove(int threshold){
@@ -32,8 +35,8 @@ public class bonusassignment {
             }
         }
     }
-    public student findTopStudent(){
-        String topStudent = student.get(0);
+    public Student findTopStudent(){
+        Student topStudent = student.get(0);
 
         for(int i=1; i<student.size(); i++){
             if(student.get(i).getMarks() > topStudent.getMarks()){
@@ -42,8 +45,8 @@ public class bonusassignment {
         }
         return topStudent;
     }
-    public ArrayList<student> getTopStudents(int threshold){
-        ArrayList<student> TopStudents = new ArrayList<>();
+    public ArrayList<Student> getTopStudents(int threshold){
+        ArrayList<Student> TopStudents = new ArrayList<>();
 
         for(int i=0; i<student.size(); i++){
             if(student.get(i).getMarks() > threshold){
